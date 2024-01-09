@@ -1,0 +1,54 @@
+.reg-successful {
+
+    // .reg-successful__container
+
+    &__container {}
+
+    // .reg-successful__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    // .reg-successful__ico-successful
+
+    &__ico-successful {
+        margin-bottom: 50px;
+    }
+
+    // .reg-successful__text
+
+    &__text {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: normal;
+
+        &>span {
+            color: $active;
+        }
+
+        margin-bottom: 50px;
+    }
+
+    // .reg-successful__timer-box
+
+    &__timer-box {
+        display: flex;
+        gap: 10px;
+    }
+
+    // .reg-successful__timer-text
+
+    &__timer-text {}
+
+    // .reg-successful__timer-time
+
+    &__timer-time {
+        font-weight: 500;
+        line-height: normal;
+        color: $active;
+    }
+}

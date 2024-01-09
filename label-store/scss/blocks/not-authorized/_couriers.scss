@@ -1,0 +1,121 @@
+.couriers {
+  /* .couriers__container */
+
+  &__container {
+  }
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__desc {
+		margin-bottom: 50px;
+		@media screen and (max-width: 476px) {
+			margin-bottom: 30px;
+		}
+	}
+
+  /* .couriers__items */
+
+  &__items {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    @media screen and (max-width: 480px) {
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+  }
+
+  /* .couriers__item */
+
+  &__item {
+    position: relative;
+    padding: 50px;
+    display: grid;
+    gap: 25px;
+    grid-auto-flow: row;
+    grid-template: auto auto auto 50px / 1fr;
+    background-color: $dark-bg;
+  }
+
+  /* .couriers__item-company */
+
+  &__item-company {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+		@media screen and (max-width: 476px) {
+			flex-direction: column;
+			align-items: start;
+		}
+  }
+
+  /* .couriers__item-company-image */
+
+  &__item-company-image {
+    width: 100px;
+    & > img {
+      border-radius: 10px;
+    }
+  }
+
+  /* .couriers__item-compeny-name */
+
+  &__item-compeny-name {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  /* .couriers__item-price */
+
+  &__item-price {
+    font-weight: 400;
+    line-height: normal;
+    & > span {
+      color: $active;
+    }
+  }
+
+  /* .couriers__item-texts */
+
+  &__item-texts {
+    font-weight: 400;
+    line-height: normal;
+    color: $not-active;
+    & > *:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  /* .couriers__item-text */
+
+  &__item-text {
+  }
+
+  /* .couriers__item-link */
+
+  &__item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: $main-color;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.3s ease-in;
+    background-color: $active;
+    border-radius: 15px;
+		transition: all 0.3s ease;
+
+		&:hover {
+			box-shadow: 0px 4px 30px 0px rgba(100, 253, 220, 0.30);
+		}
+  }
+
+  &__item-triangle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

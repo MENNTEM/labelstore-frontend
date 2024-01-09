@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/iconsfont.css" />
+    <link rel="shortcut icon" href="./img/logo.svg" />
+    <title>Label Store</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="./index.html" class="header__logo">
+            <img src="./img/logo.svg" alt="Logo" class="header__logo-img" />
+            <span class="header__logo-text">Label Store</span>
+          </a>
+          <div class="header__btns">
+            <a href="./login.html" class="header__btn">Log in</a>
+            <a href="./registration.html" class="header__btn">Sign up</a>
+          </div>
+        </div>
+      </header>
+			
+      <main class="page">
+				<section class="page__bread-crumbs bread-crumbs">
+					<div class="bread-crumbs__container">
+						<div class="bread-crumbs__links">
+							<a href="./index.html" class="bread-crumbs__link"><span>Main page</span> /</a>
+							<a href="./login.html" class="bread-crumbs__link _active-page">Log in</a>
+						</div>
+					</div>
+				</section>
+
+        <section class="page__login login">
+          <div class="login__container">
+            <h2 class="login__title _title-2">Welcome back!</h2>
+            <div class="login__box">
+              <form action="" class="login__form-auth form-auth">
+                <div class="form-auth__items">
+                  <div class="form-auth__item">
+                    <label for="" class="form-auth__label"
+                      >Username or Email</label
+                    >
+                    <input
+                      type="text"
+                      class="form-auth__inp"
+                      placeholder="Enter username or email"
+                    />
+                  </div>
+                  <div class="form-auth__item">
+                    <label for="" class="form-auth__label">Password</label>
+                    <div class="form-auth__inp-pass">
+                      <input
+                        type="password"
+                        class="form-auth__inp"
+                        placeholder="Enter password"
+                      />
+                      <i class="form-auth__eye _icon-hide-password"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-auth__warning">
+                  <div class="form-auth__warning-text">Invalid user name</div>
+                  <div class="form-auth__warning-text">
+                    Invalid mailbox name
+                  </div>
+                  <div class="form-auth__warning-text">Invalid password</div>
+                </div>
+                <button class="form-auth__btn _btn-auth">Sign in</button>
+                <a href="./recovery.html" class="form-auth__forgot"
+                  >Forgot your password?</a
+                >
+              </form>
+            </div>
+            <div class="login__sign-up">
+              Don’t have an account?
+              <a href="./registration.html">Sign up now!</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

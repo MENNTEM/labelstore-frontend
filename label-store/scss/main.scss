@@ -1,0 +1,38 @@
+// Base
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+
+// Blocks
+@import './blocks/page-feedback';
+@import './blocks/form-auth';
+@import './blocks/reg-successful';
+@import './blocks/nav-icon';
+
+// Not-authprized
+@import './blocks/not-authorized/header';
+@import './blocks/not-authorized/bread-crumbs';
+@import './blocks/not-authorized/main-block';
+@import './blocks/not-authorized/about-service';
+@import './blocks/not-authorized/couriers';
+@import './blocks/not-authorized/footer';
+@import './blocks/not-authorized/login';
+@import './blocks/not-authorized/registration';
+@import './blocks/not-authorized/recovey';
+
+// Authprized
+@import './blocks/authorized/header-authorized';
+@import './blocks/authorized/account';
+@import './blocks/authorized/sidebar';
+@import './blocks/authorized/sidebar-mini';
+@import './blocks/authorized/sidebar-open';
+@import './blocks/authorized/deposit';
+@import './blocks/authorized/pagination';
+@import './blocks/authorized/create-label';
+@import './blocks/authorized/dropdown';
+@import './blocks/authorized/orders';
+@import './blocks/authorized/order-filter';
+@import './blocks/authorized/tasks';
+@import './blocks/authorized/faq';
+@import './blocks/authorized/payment-successful';
+@import './blocks/authorized/payment-faild';

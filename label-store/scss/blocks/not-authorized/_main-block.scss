@@ -1,0 +1,138 @@
+.main-block {
+	position: relative;
+
+  &__container {
+
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__box {
+		position: relative;
+		z-index: 3;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 35px;
+		@media screen and (max-width: 476px) {
+			font-size: 40px;
+		}
+  }
+
+  &__btns {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+
+		@media screen and (max-width: 476px) {
+			flex-direction: column;
+		}
+  }
+
+  &__btn {
+    border-radius: 15px;
+    padding: 8px 35px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &._fill {
+      background-color: $active;
+      color: $main-color;
+			transition: all 0.3s ease;
+
+      &:hover {
+				box-shadow: 0px 4px 30px 0px rgba(100, 253, 220, 0.30);
+      }
+    }
+    &._outline {
+      border: 2px solid $not-active;
+      color: $not-active;
+      transition: all 0.3s ease;
+
+      &:hover {
+        border: 2px solid $active;
+        color: $active;
+      }
+    }
+  }
+
+  &__advant {
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+  }
+
+  &__advant-item {
+  }
+
+  &__image {
+		@media screen and (max-width: 1161px) {
+			position: absolute;
+			top: 0;
+			right: 15px;
+		}
+		@media screen and (max-width: 899px) {
+			display: none;
+		}
+  }
+}
+
+.advant-item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 50px;
+	background-color: $dark-bg;
+
+	@media screen and (max-width: 794px) {
+		flex: 1 1 33.333%;
+	}
+
+	@media screen and (max-width: 528px) {
+		flex: 1 1 auto;
+	}
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__ico {
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__triangle {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+  }
+}

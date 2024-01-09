@@ -1,0 +1,122 @@
+.create-label {
+
+    /* .create-label__container */
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .create-label__title */
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    /* .create-label__form-auth */
+
+    &__form-auth {
+        display: flex;
+        flex-direction: column;
+        padding: 70px 50px;
+        border-radius: 15px;
+        background: $dark-bg;
+        max-width: 600px;
+        width: 100%;
+
+        @media screen and (max-width: 510px) {
+            padding: 50px;
+            flex: 1 1 auto;
+        }
+
+        @media screen and (max-width: 414px) {
+            padding: 50px 30px;
+        }
+    }
+}
+
+.form-auth {
+
+    /* .form-auth__item-dropdown */
+
+    &__item-dropdown {}
+
+    /* .form-auth__item-desc */
+
+    &__item-desc {
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        color: $not-active;
+    }
+
+    /* .form-auth__textarea */
+
+    &__textarea {
+        padding: 10px 15px;
+        border-radius: 5px;
+        background: $text;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        color: $main-color;
+
+        &::placeholder {
+            color: $not-active;
+        }
+    }
+
+    /* .form-auth__label-checkbox */
+
+    &__label-checkbox {}
+
+    /* .form-auth__item-checkbox */
+
+    &__item-checkbox {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+
+        &:checked+.form-auth__item-custom-checkbox::before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        &:checked+.form-auth__item-custom-checkbox {
+            border: 1px solid $blue;
+        }
+    }
+
+    /* .form-auth__item-custom-checkbox */
+
+    &__item-custom-checkbox {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: $text;
+        border-radius: 4px;
+        vertical-align: sub;
+        margin-right: 5px;
+        margin-top: 1px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 13px;
+            height: 11px;
+            background: url('../img/icons/check-mark.svg') no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: all 0.2s ease-in;
+        }
+    }
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/iconsfont.css">
+    <link rel="shortcut icon" href="./img/logo.svg">
+    <title>Registration successful</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="page-feedback">
+            <section class="page-feedback__reg-succsselful reg-successful">
+                <div class="reg-successful__container">
+                    <div class="reg-successful__body">
+                        <div class="reg-successful__ico-successful"><img src="./img/icons/successful-ico.svg"
+                                alt="Successful"></div>
+                        <div class="reg-successful__text">Thank you for <span>registering</span> on our website!</div>
+                        <div class="reg-successful__timer-box">
+                            <div class="reg-successful__timer-text">the page will automatically close after:</div>
+                            <div id="countdown" class="reg-successful__timer-time">00:03</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./js/timer.js"></script>
+    <script>
+        // На странице редиректа:
+        const cookies = document.cookie.split(';').map(cookie => cookie.trim());
+        let pixelId;
+
+        for (const cookie of cookies) {
+            const [name, value] = cookie.split('=');
+            if (name === 'PIXEL') {
+                pixelId = value;
+                break;
+            }
+        }
+
+        // Выводим значение в консоль
+        console.log('Пиксель ID на странице редиректа:', pixelId);
+    </script>
+    <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=<?=pixelId?>&ev=Lead&noscript=1" />
+</body>
+
+</html>

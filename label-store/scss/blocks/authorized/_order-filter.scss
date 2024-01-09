@@ -1,0 +1,115 @@
+.orders-filter {
+
+    /* .orders-filter__dropdown */
+
+    &__dropdown {
+        margin-right: 40px;
+        @media screen and (max-width: 850px) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+    }
+    /* .orders-filter__btns */
+
+    &__btns {
+        @media screen and (max-width: 850px) {
+            display: flex;
+            gap: 30px;
+            width: 100%;
+        }
+    }
+
+    /* .orders-filter__btn-search */
+
+    &__btn-search {
+        padding: 15px 40px;
+        height: 100%;
+        background: #0D6CEA;
+        color: $text;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 10px;
+        margin-right: 20px;
+        @media screen and (max-width: 850px) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+
+    /* .orders-filter__reset */
+
+    &__reset {
+        padding: 15px 30px;
+        height: 100%;
+        background: $dark-bg;
+        color: #0D6CEA;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 10px;
+        cursor: pointer;
+
+        @media screen and (max-width: 850px) {
+            width: 100%;
+        }
+    }
+}
+
+.dropdown {
+
+    /* .dropdown__wrapper */
+
+    &__wrapper {}
+
+    /* .dropdown__btn */
+
+    &__btn {
+        &._filter {
+            width: 300px;
+            padding: 18px 35px 18px 20px;
+            height: 100%;
+            background: $dark-bg;
+            color: $text;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 10px;
+
+            @media screen and (max-width: 850px) {
+                width: 100%;
+            }
+        }
+    }
+
+    /* .dropdown__list */
+
+    &__list {
+        &._filter {
+            width: 300px;
+            background-color: $dark-bg;
+            box-shadow: 0px 4px 20px 0px #111E32;
+            @media screen and (max-width: 850px) {
+                width: 100%;
+            }
+        }
+    }
+
+    /* .dropdown__item */
+
+    &__item {
+        &._filter {
+            padding: 18px 20px;
+            color: $text;
+            &:hover {
+            background-color: #111E32;
+        }
+        }
+    }
+
+    /* .dropdown__input-hidden */
+
+    &__input-hidden {}
+}

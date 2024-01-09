@@ -1,0 +1,97 @@
+.page {
+
+    /* .page__recovey */
+
+    &__recovey {
+    }
+}
+.recovey {
+
+    /* .recovey__container */
+
+    &__container {
+    }
+
+    /* .recovey__title */
+
+    &__title {
+        margin-bottom: 50px;
+        @media screen and (max-width: 480px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    /* .recovey__box */
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    /* .recovey__form-auth */
+
+    &__form-auth {
+        display: flex;
+        flex-direction: column;
+        padding: 70px 50px;
+        border-radius: 15px;
+        background: $dark-bg;
+        max-width: 490px;
+        width: 100%;
+
+        @media screen and (max-width: 510px) {
+            padding: 50px;
+            flex: 1 1 auto;
+        }
+
+        @media screen and (max-width: 414px) {
+            padding: 50px 30px;
+        }
+    }
+}
+
+.form-auth {
+
+    /* .form-auth__desc */
+
+    &__desc {
+    }
+
+    /* .form-auth__items */
+
+    &__items {
+    }
+
+    /* .form-auth__item */
+
+    &__item {
+    }
+
+    /* .form-auth__label */
+
+    &__label {
+    }
+
+    /* .form-auth__inp */
+
+    &__inp {
+    }
+
+    /* .form-auth__warning */
+
+    &__warning {
+    }
+
+    /* .form-auth__warning-text */
+
+    &__warning-text {
+    }
+
+    /* .form-auth__btn */
+
+    &__btn {
+    }
+}

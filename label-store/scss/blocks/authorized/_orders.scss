@@ -1,0 +1,35 @@
+.orders {
+
+    /* .orders__container */
+
+    &__container {
+    }
+
+    /* .orders__title */
+
+    &__title {
+        margin-bottom: 50px;
+        @media screen and (max-width: 480px) {
+            margin-bottom: 30px;
+        }
+    }
+    
+    /* .orders__filter */
+
+    &__filter {
+        margin-bottom: 20px;
+        & > form {
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: 850px) {
+                flex-direction: column;
+            }
+        }
+    }
+    
+    /* .orders__tasks */
+
+    &__tasks {
+    }
+
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/iconsfont.css">
+    <link rel="shortcut icon" href="./img/logo.svg">
+    <title>Create label</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-authorized">
+            <div class="header-authorized__container">
+                <div class="header-authorized__content">
+                    <div class="header-authorized__balance">
+                        <div class="header-authorized__balance-ico _icon-cheaper"></div>
+                        <div class="header-authorized__balance-text">$0.00</div>
+                    </div>
+                    <a href="#!" class="header-authorized__contact-us">
+                        <span class="header-authorized__contact-us-text">Chat with us</span>
+                        <span class="header-authorized__contact-us-icon _icon-feedback"></span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <div class="sidebar__nav-btn">
+                <div class="nav-icon-btn">
+                    <div class="nav-icon"></div>
+                </div>
+            </div>
+            <div class="sidebar-mini">
+                <a href="" class="sidebar-mini__logo"><img src="./img/logo.svg" alt="Logo"></a>
+                <nav class="sidebar-mini__nav-mini nav-mini">
+                    <ul class="nav-mini__list">
+                        <li class="nav-mini__item">
+                            <a href="./account.html" class="nav-mini__link _icon-profile"></a>
+                            <a href="./deposit.html" class="nav-mini__link _icon-deposit"></a>
+                        </li>
+                        <li class="nav-mini__item">
+                            <div class="nav-mini__title">labels</div>
+                            <a href="./create-label.html" class="nav-mini__link _icon-price-tags _active"></a>
+                            <a href="./orders.html" class="nav-mini__link _icon-order-labels"></a>
+                        </li>
+                        <li class="nav-mini__item">
+                            <div class="nav-mini__title">help</div>
+                            <a href="./ticket.html" class="nav-mini__link _icon-ticket"></a>
+                            <a href="./faq.html" class="nav-mini__link _icon-faq"></a>
+                            <a href="#!" class="nav-mini__link _icon-logout"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div data-simplebar class="siderbar-open">
+                <a href="" class="siderbar-open__logo"><img src="./img/logo.svg" alt="Logo"></a>
+                <nav class="siderbar-open__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="./account.html" class="nav__link">
+                                <span class="nav__link-ico _icon-profile"></span>
+                                <span class="nav__link-text">Account</span>
+                            </a>
+                            <a href="./deposit.html" class="nav__link">
+                                <span class="nav__link-ico _icon-deposit"></span>
+                                <span class="nav__link-text">Deposit</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__item-title">labels</div>
+                            <a href="./create-label.html" class="nav__link _active">
+                                <span class="nav__link-ico _icon-price-tags"></span>
+                                <span class="nav__link-text">Create label</span>
+                            </a>
+                            <a href="./orders.html" class="nav__link">
+                                <span class="nav__link-ico _icon-order-labels"></span>
+                                <span class="nav__link-text">Label orders</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__item-title">help</div>
+                            <a href="./ticket.html" class="nav__link">
+                                <span class="nav__link-ico _icon-ticket"></span>
+                                <span class="nav__link-text">Ticket</span>
+                            </a>
+                            <a href="./faq.html" class="nav__link">
+                                <span class="nav__link-ico _icon-faq"></span>
+                                <span class="nav__link-text">FAQ</span>
+                            </a>
+                            <a href="#!" class="nav__link">
+                                <span class="nav__link-ico _icon-logout"></span>
+                                <span class="nav__link-text">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <main class="page">
+            <section class="page__create-label create-label">
+                <div class="create-label__container">
+                    <h2 class="create-label__title _title-2">Create label</h2>
+                    <form action="" class="create-label__form-auth form-auth">
+                        <div class="form-auth__items">
+                            <div class="form-auth__item">
+                                <label for="" class="form-auth__label">Service</label>
+                                <div class="form-auth__item-dropdown dropdown">
+                                    <div class="dropdown__wrapper">
+                                        <button class="dropdown__btn">Select service</button>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__item" data-value="FedEx">FEDEX International Oriority (Prepaid Customs Duties & Import Taxes)</li>
+                                            <li class="dropdown__item" data-value="DHL">DHL Worldwide Express (Prepaid Customs Duties & Import Taxes)</li>
+                                        </ul>
+                                        <input type="text" name="select-service" id="" value="" class="dropdown__input-hidden">
+                                    </div>
+                                </div>
+                                <div class="form-auth__item-desc">Be detailed on customs declaration. Price 30</div>
+                            </div>
+                            <div class="form-auth__item">
+                                <label for="" class="form-auth__label">Sender Name</label>
+                                <input type="text" class="form-auth__inp" placeholder="Enter sender name">
+                            </div>
+                            <div class="form-auth__item">
+                                <label for="" class="form-auth__label">Sender Phone</label>
+                                <input type="tel" class="form-auth__inp" placeholder="Enter sender phone">
+                            </div>
+                            <div class="form-auth__item">
+                                <label for="" class="form-auth__label">Sender Street #1</label>
+                                <input type="text" class="form-auth__inp" placeholder="Enter sender street #1">
+                            </div>
+                            <div class="form-auth__item">
+                                <label for="" class="form-auth__label">Sender Street #2</label>
+                                <input type="text" class="form-auth__inp" placeholder="Enter sender street #2">
+                            </div>
+                            <div class="form-auth__item">
+                                <label for="" class="form-auth__label">Sender City</label>
+                                <input type="text" class="form-auth__inp" placeholder="Enter sender city">
+                            </div>
+                            <div class="form-auth__item">
+                                <label for="" class="form-auth__label">Sender State / Province</label>
+                                <input type="text" class="form-auth__inp" placeholder="Enter sender state / province">
+                            </div>
+                            <div class="form-auth__item">
+                                <label for="" class="form-auth__label">Sender Zip Code</label>
+                                <input type="text" class="form-auth__inp" placeholder="Enter sender zip code">
+                            </div>
+                            <div class="form-auth__item">
+                                <label for="" class="form-auth__label">Receiver Country</label>
+                                <input type="text" class="form-auth__inp" placeholder="Enter receiver country">
+                            </div>
+                            <div class="form-auth__item">
+                                <label for="" class="form-auth__label">Custom Declaration (be detailed, ex: 2x white t-shirts ($5 each))</label>
+                                <textarea class="form-auth__textarea" name="" placeholder="2x white t-shirts ($5 each)"></textarea>
+                            </div>
+                            <div class="form-auth__item">
+                                <label for="" class="form-auth__label">Schedule Pick-up (optional - not available from China)</label>
+                                <input type="date" class="form-auth__inp">
+                            </div>
+                            <div class="form-auth__item">
+                                <label for="" class="form-auth__label">Weight (kg)</label>
+                                <input type="number" class="form-auth__inp">
+                            </div>
+                            <div class="form-auth__item">
+                                <label for="signature-required" class="form-auth__label-checkbox">
+                                    <input type="checkbox" name="signature-required" id="signature-required" class="form-auth__item-checkbox">
+                                    <span class="form-auth__item-custom-checkbox"></span>
+                                    <span>Signature required</span>
+                                </label>
+                            </div>
+                            <div class="form-auth__item">
+                                <label for="" class="form-auth__label">Additional notes</label>
+                                <textarea class="form-auth__textarea _textarea" name="" placeholder="Enter additional notes"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-auth__warning">
+                            <div class="form-auth__warning-text">Warning!!</div>
+                        </div>
+                        <button class="form-auth__btn _btn-auth">Create label</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./js/scrollbar.js"></script>
+    <script src="./js/checking-device.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

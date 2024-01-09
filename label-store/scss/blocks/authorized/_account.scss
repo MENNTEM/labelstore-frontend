@@ -1,0 +1,128 @@
+.account {
+
+    /* .account__container */
+
+    &__container {
+    }
+
+    /* .account__title */
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    /* .account__column */
+
+    &__column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 23px;
+        @media screen and (max-width: 720px) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    /* .account__username */
+
+    &__username {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 281px;
+        background-color: $dark-bg;
+        border-radius: 15px;
+        @media screen and (max-width: 720px) {
+            width: 100%;
+        }
+    }
+
+    /* .account__username-img */
+
+    &__username-img {
+        margin-bottom: 25px;
+    }
+
+    /* .account__username-text */
+
+    &__username-text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    /* .account__body */
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        @media screen and (max-width: 720px) {
+            width: 100%;
+        }
+    }
+
+    /* .account__inf */
+
+    &__inf {
+        padding: 0 35px;
+        display: flex;
+        align-items: center;
+        height: 130px;
+        background-color: $dark-bg;
+        border-radius: 15px;
+        @media screen and (min-width: 721px) {
+            max-width: 450px;
+        }
+        @media screen and (max-width: 720px) {
+            padding: 0;
+            justify-content: center;
+        }
+    }
+
+    /* .account__inf-title */
+
+    &__inf-title {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+        margin-right: 15px;
+        @media screen and (max-width: 480px) {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+    }
+
+    /* .account__inf-text */
+
+    &__inf-text {
+        font-size: 20px;
+        display: flex;
+        color: $active;
+        @media screen and (max-width: 480px) {
+            font-size: 18px;
+        }
+    }
+
+    /* .account__inf-text-ico */
+
+    &__inf-text-ico {
+        margin-right: 15px;
+        @media screen and (max-width: 480px) {
+            margin-right: 10px;
+        }
+    }
+
+    /* .account__inf-text-score */
+
+    &__inf-text-score {
+        font-size: 20px;
+        @media screen and (max-width: 480px) {
+            font-size: 18px;
+        }
+    }
+}

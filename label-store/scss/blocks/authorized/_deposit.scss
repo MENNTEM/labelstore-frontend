@@ -1,0 +1,400 @@
+.deposit {
+
+    /* .deposit__container */
+
+    &__container {
+        max-width: 1048px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    /* .deposit__title */
+
+    &__title {
+        margin-bottom: 50px;
+
+        @media screen and (max-width: 480px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    /* .deposit__payment */
+
+    &__payment {
+        display: flex;
+        align-items: center;
+        min-height: 130px;
+        border-radius: 15px;
+        background-color: $dark-bg;
+        margin-bottom: 20px;
+    }
+
+    /* .deposit__additional-payment */
+
+    &__additional-payment {
+        margin-bottom: 35px;
+    }
+
+    /* .deposit__history */
+
+    &__history {}
+}
+
+.payment {
+
+    /* .payment__body */
+
+    &__body {
+        padding: 0 35px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        @media screen and (max-width:1050px) {
+            padding: 35px 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    /* .payment__method */
+
+    &__method {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width:1050px) {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    /* .payment__method-title */
+
+    &__method-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+
+        @media screen and (min-width:1051px) {
+            margin-right: 20px;
+        }
+
+        @media screen and (max-width:1050px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    /* .payment__method-btn */
+
+    &__method-btn {
+        padding: 12px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+
+        font-weight: 500;
+        line-height: normal;
+        color: $main-color;
+
+        border-radius: 5px;
+        background: $text;
+
+        @media screen and (min-width:1051px) {
+            margin-right: 50px;
+        }
+
+        @media screen and (max-width:1050px) {
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 354px;
+        }
+    }
+
+    /* .payment__method-btn-ico */
+
+    &__method-btn-ico {}
+
+    /* .payment__method-btn-text */
+
+    &__method-btn-text {}
+
+    /* .payment__form */
+
+    &__form {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width:1050px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    /* .payment__form-amount */
+
+    &__form-amount {
+        @media screen and (max-width:1050px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    /* .payment__form-btn */
+
+    &__form-btn {
+        padding: 13px 20px;
+        border-radius: 5px;
+        background: $not-active;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            background: $active;
+            color: $main-color;
+        }
+
+        @media screen and (max-width:1050px) {
+            width: 100%;
+            max-width: 354px;
+        }
+    }
+}
+
+.amount-form {
+
+    /* .amount-form__label */
+
+    &__label {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+
+        @media screen and (min-width:1051px) {
+            margin-right: 20px;
+        }
+
+        @media screen and (max-width:1050px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    /* .amount-form__inp */
+
+    &__inp {
+        padding: 13px 15px;
+        background: $text;
+        border-radius: 5px;
+        text-align: center;
+        color: $main-color;
+
+        @media screen and (min-width:1051px) {
+            margin-right: 35px;
+        }
+
+        @media screen and (max-width:1050px) {
+            margin-bottom: 40px;
+            width: 100%;
+            max-width: 354px;
+        }
+    }
+}
+
+.additional-payment {
+
+    /* .additional-payment__text */
+
+    &__text {
+        a {
+            color: $active;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.history {
+
+    /* .history__items */
+
+    &__items {
+        &>*:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    /* .history__item */
+
+    &__item {
+        padding: 13px 25px;
+        display: grid;
+        grid-template-columns: 15% 25% 35% 25%;
+        align-items: center;
+        background-color: $dark-bg;
+        border-radius: 10px;
+
+        &._title-item {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 599px) {
+            &._hide-item {
+                display: none;
+            }
+
+            padding: 0;
+            display: flex;
+            background-color: transparent;
+            flex-direction: column;
+            width: 100%;
+
+            &>*:first-child {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    /* .history__item-number */
+
+    &__item-number {
+        @media screen and (max-width: 599px) {
+            padding: 15px 20px;
+            display: flex;
+            gap: 10px;
+            align-self: flex-start;
+            align-items: center;
+            width: 100%;
+            border-radius: 10px;
+            background: $dark-bg;
+        }
+    }
+
+    /* .history__item-amount */
+
+    &__item-amount {
+        @media screen and (max-width: 599px) {
+            padding: 15px 20px;
+            display: flex;
+            gap: 20px;
+            align-self: flex-start;
+            align-items: center;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background: $dark-bg;
+            border-bottom: 3px solid $main-color;
+        }
+    }
+
+    /* .history__item-status */
+
+    &__item-status {
+        @media screen and (min-width: 600px) {
+            justify-self: start;
+        }
+
+        @media screen and (max-width: 599px) {
+            padding: 15px 20px;
+            display: flex;
+            gap: 20px;
+            align-self: flex-start;
+            align-items: center;
+            width: 100%;
+            background: $dark-bg;
+            border-bottom: 3px solid $main-color;
+        }
+    }
+
+    /* .history__item-datetime */
+
+    &__item-datetime {
+        @media screen and (max-width: 599px) {
+            padding: 15px 20px;
+            display: flex;
+            gap: 20px;
+            align-self: flex-start;
+            align-items: center;
+            width: 100%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: $dark-bg;
+        }
+    }
+
+    /* .history__item-number-title */
+
+    &__item-number-title {
+        @media screen and (min-width:600px) {
+            display: none;
+        }
+    }
+
+    /* .history__item-number-text */
+
+    &__item-number-text {}
+
+    /* .history__item-amount-title */
+
+    &__item-amount-title {
+        @media screen and (min-width:600px) {
+            display: none;
+        }
+    }
+
+    /* .history__item-amount-text */
+
+    &__item-amount-text {
+        &._amount {
+            color: $active;
+        }
+    }
+
+    /* .history__item-status-title */
+
+    &__item-status-title {
+        @media screen and (min-width:600px) {
+            display: none;
+        }
+    }
+
+    /* .history__item-status-text */
+
+    &__item-status-text {
+        border-radius: 5px;
+        padding: 10px 15px;
+
+        &._reg {
+            border: 2px solid $orange;
+            color: $orange;
+        }
+
+        &._accept {
+            border: 2px solid $active;
+            color: $active;
+        }
+
+        &._cancel {
+            border: 2px solid $warning;
+            color: $warning;
+        }
+    }
+
+    /* .history__item-datetime-title */
+
+    &__item-datetime-title {
+        @media screen and (min-width:600px) {
+            display: none;
+        }
+    }
+
+    /* .history__item-datetime-text */
+
+    &__item-datetime-text {}
+}

@@ -1,0 +1,152 @@
+.faq {
+  /* .faq__container */
+
+  &__container {
+  }
+
+  /* .faq__title */
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  /* .faq__spoilers */
+
+  &__spoilers {
+    margin-bottom: 35px;
+  }
+
+  /* .faq__text */
+
+  &__text {
+    & > a {
+      color: $active;
+    }
+    & > a:hover {
+      text-decoration: underline;
+    }
+    margin-bottom: 25px;
+  }
+
+	&__socials {
+		display: flex;
+		gap: 30px;
+		@media screen and (max-width: 476px) {
+			gap: 15px;
+		}
+	}
+	&__socials-title {
+		font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+		@media screen and (max-width: 476px) {
+			font-size: 16px;
+		}
+	}
+
+	&__socials-items {
+		display: flex;
+		gap: 15px;
+	}
+}
+
+.spoilers {
+  & > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.spollers {
+  /* .spollers__title */
+
+  &__title {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 25px;
+    background-color: $dark-bg;
+    border-radius: 15px;
+		@media screen and (max-width: 476px) {
+			font-size: 18px;
+		}
+
+    & > .spollers__title-text {
+      padding-right: 30px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background-color: $text;
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      transition: transform 0.3s ease;
+    }
+
+    &::after {
+      transform: translateY(-50%) rotate(-90deg);
+    }
+
+    &._spoller-active::after {
+      transform: translateY(-50%) rotate(0deg);
+    }
+  }
+
+  /* .spollers__body */
+
+  &__body {
+    margin-top: 10px;
+    padding: 25px;
+
+    & > *:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    border-radius: 15px;
+    background: $dark-bg;
+  }
+
+  /* .spollers__text */
+
+  &__text {
+    & > span {
+      color: $active;
+    }
+
+    a {
+      color: $active;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.socials-items-faq {
+	&__item {
+		display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $not-active;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $active;
+    }
+	}
+	&__item-ico {
+		font-size: 20px;
+    display: flex;
+    align-items: center;
+	}
+	&__item-text {
+	}
+}

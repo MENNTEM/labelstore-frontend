@@ -1,0 +1,45 @@
+.payment-successful {
+
+    /* .payment-successful__container */
+
+    &__container {}
+
+    /* .payment-successful__body */
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .payment-successful__ico-successful */
+
+    &__ico-successful {
+        margin-bottom: 30px;
+    }
+
+    /* .payment-successful__text */
+
+    &__text {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* .payment-successful__btn */
+
+    &__btn {
+        padding: 13px 50px;
+        border-radius: 8px;
+        background: $not-active;
+        color: $text;
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: $active;
+            color: $main-color;
+        }
+    }
+}

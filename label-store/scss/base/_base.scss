@@ -1,0 +1,84 @@
+// @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-main;
+  font-style: 16px;
+  background-color: $main-color;
+  color: $text;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+input[type="password"] {
+  padding: 13px 45px 13px 15px;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+  & > * {
+    margin-bottom: 150px;
+		@media screen and (max-width: 768px) {
+			margin-bottom: 100px;
+		}
+		// @media screen and (max-width: 476px) {
+		// 	margin-bottom: 70px;
+		// }
+  }
+}
+
+[class*="__container"] {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+[class*="__title"] {
+  font-family: $font-title;
+  span {
+    color: $active;
+  }
+}
+
+._title-2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: normal;
+	@media screen and (max-width: 476px) {
+		font-size: 32px;
+	}
+}
+
+._inverse-item {
+  border-right: 0px none !important;
+  border-left: 5px solid $active;
+}
+
+.none {
+  display: none;
+}

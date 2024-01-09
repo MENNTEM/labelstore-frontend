@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/iconsfont.css">
+    <link rel="shortcut icon" href="./img/logo.svg">
+    <title>Label orders</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-authorized">
+            <div class="header-authorized__container">
+                <div class="header-authorized__content">
+                    <div class="header-authorized__balance">
+                        <div class="header-authorized__balance-ico _icon-cheaper"></div>
+                        <div class="header-authorized__balance-text">$0.00</div>
+                    </div>
+                    <a href="#!" class="header-authorized__contact-us">
+                        <span class="header-authorized__contact-us-text">Chat with us</span>
+                        <span class="header-authorized__contact-us-icon _icon-feedback"></span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <div class="sidebar__nav-btn">
+                <div class="nav-icon-btn">
+                    <div class="nav-icon"></div>
+                </div>
+            </div>
+            <div class="sidebar-mini">
+                <a href="" class="sidebar-mini__logo"><img src="./img/logo.svg" alt="Logo"></a>
+                <nav class="sidebar-mini__nav-mini nav-mini">
+                    <ul class="nav-mini__list">
+                        <li class="nav-mini__item">
+                            <a href="./account.html" class="nav-mini__link _icon-profile"></a>
+                            <a href="./deposit.html" class="nav-mini__link _icon-deposit"></a>
+                        </li>
+                        <li class="nav-mini__item">
+                            <div class="nav-mini__title">labels</div>
+                            <a href="./create-label.html" class="nav-mini__link _icon-price-tags"></a>
+                            <a href="./orders.html" class="nav-mini__link _icon-order-labels _active"></a>
+                        </li>
+                        <li class="nav-mini__item">
+                            <div class="nav-mini__title">help</div>
+                            <a href="./ticket.html" class="nav-mini__link _icon-ticket"></a>
+                            <a href="./faq.html" class="nav-mini__link _icon-faq"></a>
+                            <a href="#!" class="nav-mini__link _icon-logout"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div data-simplebar class="siderbar-open">
+                <a href="" class="siderbar-open__logo"><img src="./img/logo.svg" alt="Logo"></a>
+                <nav class="siderbar-open__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="./account.html" class="nav__link">
+                                <span class="nav__link-ico _icon-profile"></span>
+                                <span class="nav__link-text">Account</span>
+                            </a>
+                            <a href="./deposit.html" class="nav__link">
+                                <span class="nav__link-ico _icon-deposit"></span>
+                                <span class="nav__link-text">Deposit</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__item-title">labels</div>
+                            <a href="./create-label.html" class="nav__link">
+                                <span class="nav__link-ico _icon-price-tags"></span>
+                                <span class="nav__link-text">Create label</span>
+                            </a>
+                            <a href="./orders.html" class="nav__link _active">
+                                <span class="nav__link-ico _icon-order-labels"></span>
+                                <span class="nav__link-text">Label orders</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <div class="nav__item-title">help</div>
+                            <a href="./ticket.html" class="nav__link">
+                                <span class="nav__link-ico _icon-ticket"></span>
+                                <span class="nav__link-text">Ticket</span>
+                            </a>
+                            <a href="./faq.html" class="nav__link">
+                                <span class="nav__link-ico _icon-faq"></span>
+                                <span class="nav__link-text">FAQ</span>
+                            </a>
+                            <a href="#!" class="nav__link">
+                                <span class="nav__link-ico _icon-logout"></span>
+                                <span class="nav__link-text">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <main class="page">
+            <section class="page__orders orders">
+                <div class="orders__container">
+                    <h2 class="orders__title _title-2">Label Orders</h2>
+                    <div class="orders__filter orders-filter">
+                        <form action="">
+                            <div class="orders-filter__dropdown dropdown">
+                                <div class="dropdown__wrapper">
+                                    <button class="dropdown__btn _filter">Status</button>
+                                    <ul class="dropdown__list _filter">
+                                        <li class="dropdown__item _filter" data-value="Ready-to-download">Ready to download</li>
+                                        <li class="dropdown__item _filter" data-value="Rejected">Rejected</li>
+                                        <li class="dropdown__item _filter" data-value="Consideration">Consideration</li>
+                                    </ul>
+                                    <input type="text" name="select-service" id="" value="" class="dropdown__input-hidden">
+                                </div>
+                            </div>
+                            <div class="orders-filter__btns">
+                                <button class="orders-filter__btn-search">Search</button>
+                                <input class="orders-filter__reset" type="reset" name="" id="" value="Reset">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="orders__tasks tasks">
+                        <div class="tasks__items">
+                            <div class="tasks__item _hide-item _title-item">
+                                <div class="tasks__item-status">Status</div>
+                                <div class="tasks__item-type">Type</div>
+                                <div class="tasks__datetime">Creation date</div>
+                                <div class="tasks__download"></div>
+                            </div>
+                            <div class="tasks__item">
+                                <div class="tasks__item-number">
+                                    <div class="tasks__item-number-grid">#</div>
+                                    <div class="tasks__item-number-text">1</div>
+                                </div>
+                                <div class="tasks__item-status">
+                                    <div class="tasks__item-status-title">Status:</div>
+                                    <div class="tasks__item-status-text _ready">Ready to download</div>
+                                </div>
+                                <div class="tasks__item-type">
+                                    <div class="tasks__item-type-title">Type:</div>
+                                    <div class="tasks__item-type-text">FEDEX International Priority (Custom Paid)</div>
+                                </div>
+                                <div class="tasks__item-datetime">
+                                    <div class="tasks__item-datetime-title">Creation date:</div>
+                                    <div class="tasks__item-datetime-text">07.22.2023 23:50</div>
+                                </div>
+                                <div class="tasks__item-download">
+                                    <div class="tasks__item-download-title">Download</div>
+                                    <div class="tasks__item-download-text _icon-download"></div>
+                                </div>
+                            </div>
+                            <div class="tasks__item">
+                                <div class="tasks__item-number">
+                                    <div class="tasks__item-number-grid">#</div>
+                                    <div class="tasks__item-number-text">1</div>
+                                </div>
+                                <div class="tasks__item-status">
+                                    <div class="tasks__item-status-title">Status:</div>
+                                    <div class="tasks__item-status-text _rejected">Rejected</div>
+                                </div>
+                                <div class="tasks__item-type">
+                                    <div class="tasks__item-type-title">Type:</div>
+                                    <div class="tasks__item-type-text">FEDEX International Priority (Custom Paid)</div>
+                                </div>
+                                <div class="tasks__item-datetime">
+                                    <div class="tasks__item-datetime-title">Creation date:</div>
+                                    <div class="tasks__item-datetime-text">07.22.2023 23:50</div>
+                                </div>
+                                <a href="#!" class="tasks__item-download">
+                                    <span class="tasks__item-download-title">Download</span>
+                                    <span class="tasks__item-download-text _icon-download"></span>
+                                </a>
+                            </div>
+                            <div class="tasks__item">
+                                <div class="tasks__item-number">
+                                    <div class="tasks__item-number-grid">#</div>
+                                    <div class="tasks__item-number-text">1</div>
+                                </div>
+                                <div class="tasks__item-status">
+                                    <div class="tasks__item-status-title">Status:</div>
+                                    <div class="tasks__item-status-text _consideration">Consideration</div>
+                                </div>
+                                <div class="tasks__item-type">
+                                    <div class="tasks__item-type-title">Type:</div>
+                                    <div class="tasks__item-type-text">DHL Worldwide Express (Custom Paid)</div>
+                                </div>
+                                <div class="tasks__item-datetime">
+                                    <div class="tasks__item-datetime-title">Creation date:</div>
+                                    <div class="tasks__item-datetime-text">07.22.2023 23:50</div>
+                                </div>
+                                <div class="tasks__item-download">
+                                    <div class="tasks__item-download-title">Download</div>
+                                    <div class="tasks__item-download-text _icon-download"></div>
+                                </div>
+                            </div>
+                            <div class="tasks__item">
+                                <div class="tasks__item-number">
+                                    <div class="tasks__item-number-grid">#</div>
+                                    <div class="tasks__item-number-text">1</div>
+                                </div>
+                                <div class="tasks__item-status">
+                                    <div class="tasks__item-status-title">Status:</div>
+                                    <div class="tasks__item-status-text _rejected">Rejected</div>
+                                </div>
+                                <div class="tasks__item-type">
+                                    <div class="tasks__item-type-title">Type:</div>
+                                    <div class="tasks__item-type-text">FEDEX International Priority (Custom Paid)</div>
+                                </div>
+                                <div class="tasks__item-datetime">
+                                    <div class="tasks__item-datetime-title">Creation date:</div>
+                                    <div class="tasks__item-datetime-text">07.22.2023 23:50</div>
+                                </div>
+                                <div class="tasks__item-download">
+                                    <div class="tasks__item-download-title">Download</div>
+                                    <div class="tasks__item-download-text _icon-download"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <span class="step-links">
+                            <a class="step-links__button-text" href="?page=1">First</a>
+                            <a class="step-links__button-arrow _arrow-left" href="?page=1"></a>
+                            <span class="current">Page 2 of 4</span>
+                            <a class="step-links__button-arrow _arrow-right" href="?page=3"></a>
+                            <a class="step-links__button-text" href="?page=4">Last</a>
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./js/scrollbar.js"></script>
+    <script src="./js/checking-device.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

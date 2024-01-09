@@ -1,0 +1,138 @@
+.footer {
+	padding: 30px 0;
+	background-color: $dark-bg;
+
+  &__container {
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+		@media screen and (max-width: 710px) {
+			flex-direction: column;
+			gap: 30px;
+		}
+  }
+
+  &__box {
+		@media screen and (min-width: 711px) {
+			max-width: 594px;
+		}
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &__logo-text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    color: $text;
+  }
+
+  &__desc {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__socials {
+		@media screen and (max-width: 710px) {
+			display: flex;
+			gap: 30px;
+		}
+		@media screen and (max-width: 476px) {
+			gap: 15px;
+		}
+  }
+
+  &__socials-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+		@media screen and (min-width: 711px) {
+			margin-bottom: 30px;
+		}
+		@media screen and (max-width: 476px) {
+			font-size: 16px;
+		}
+  }
+
+  &__socials-items {
+		@media screen and (min-width: 711px) {
+			& > *:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+		@media screen and (max-width: 710px) {
+			display: flex;
+			gap: 15px;
+		}
+
+  }
+
+  &__bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		gap: 50px;
+		@media screen and (max-width: 476px) {
+			flex-direction: column;
+			gap: 15px;
+		}
+  }
+
+  &__copyr {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+		color: $not-active;
+  }
+
+  &__link-img {
+		font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+		text-decoration: underline !important;
+		color: $not-active;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: $active;
+		}
+  }
+}
+.socials-items-footer {
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $not-active;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $active;
+    }
+  }
+
+  &__item-ico {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+  &__item-text {
+  }
+}

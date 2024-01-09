@@ -1,0 +1,125 @@
+.form-auth {
+
+    /* .form-auth__items */
+
+    &__items {
+        &>*:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
+
+    /* .form-auth__item */
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .form-auth__desc */
+
+    &__desc {
+        margin-bottom: 35px;
+    }
+
+    /* .form-auth__label */
+
+    &__label {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    /* .form-auth__inp */
+
+    &__inp {
+        padding: 13px 15px;
+        width: 100%;
+        border-radius: 5px;
+        background: $text;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        color: $main-color;
+
+        &::placeholder {
+            color: $not-active;
+        }
+    }
+
+    /* .form-auth__inp-pass */
+
+    &__inp-pass {
+        position: relative;
+    }
+
+    /* .form-auth__eye */
+
+    &__eye {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0px, -50%);
+        margin-right: 15px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    /* .form-auth__warning */
+
+    &__warning {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        color: $warning;
+
+        &>*:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        margin-top: 25px;
+    }
+
+    /* .form-auth__warning-text */
+
+    &__warning-text {
+    }
+
+    /* .form-auth__btn */
+
+    &__btn {
+        padding: 13px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 5px;
+        background: $blue;
+        
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        color: $white;
+        
+        transition: all 0.2s ease-in;
+        
+        &:hover {
+            background-color: $blue-hover;
+        }
+        margin-top: 35px;
+    }
+
+    /* .form-auth__forgot */
+
+    &__forgot {
+        margin-top: 30px;
+        text-align: center;
+        color: $text;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $active;
+        }
+    }
+}

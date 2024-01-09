@@ -1,0 +1,229 @@
+.tasks {
+
+    /* .tasks__items */
+
+    &__items {
+        &>*:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    /* .tasks__item */
+
+    &__item {
+        padding: 13px 25px;
+        display: grid;
+        grid-template-columns: 30% 45% 20% 5%;
+        align-items: center;
+        background-color: $dark-bg;
+        border-radius: 10px;
+
+        &._title-item {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 850px) {
+            &._hide-item {
+                display: none;
+            }
+
+            padding: 0;
+            display: flex;
+            background-color: transparent;
+            flex-direction: column;
+            width: 100%;
+
+            &>*:first-child {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    /* .tasks__item-status */
+
+    &__item-status {
+        @media screen and (min-width: 851px) {
+            justify-self: start;
+        }
+        @media screen and (max-width: 850px) {
+            padding: 15px 20px;
+            display: flex;
+            gap: 20px;
+            align-self: flex-start;
+            align-items: center;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background: $dark-bg;
+            border-bottom: 3px solid $main-color;
+        }
+    }
+
+    /* .tasks__item-type */
+
+    &__item-type {
+        @media screen and (max-width: 850px) {
+            padding: 15px 20px;
+            display: flex;
+            gap: 20px;
+            align-self: flex-start;
+            align-items: center;
+            width: 100%;
+            background: $dark-bg;
+            border-bottom: 3px solid $main-color;
+        }
+    }
+
+    /* .tasks__datetime */
+
+    &__datetime {
+    }
+
+    /* .tasks__download */
+
+    &__download {
+    }
+
+    /* .tasks__item-number */
+
+    &__item-number {
+        @media screen and (min-width: 851px) {
+            display: none;
+        }
+        @media screen and (max-width: 850px) {
+            padding: 15px 20px;
+            display: flex;
+            gap: 10px;
+            align-self: flex-start;
+            align-items: center;
+            width: 100%;
+            border-radius: 10px;
+            background: $dark-bg;
+        }
+    }
+
+    /* .tasks__item-number-grid */
+
+    &__item-number-grid {
+        
+    }
+
+    /* .tasks__item-number-text */
+
+    &__item-number-text {
+    }
+
+    /* .tasks__item-status-title */
+
+    &__item-status-title {
+        @media screen and (min-width: 851px) {
+            display: none;
+        }
+    }
+
+    /* .tasks__item-status-text */
+
+    &__item-status-text {
+        border-radius: 5px;
+        padding: 10px 15px;
+
+        &._ready {
+            color: $active;
+            border: 2px solid $active;
+        }
+        &._rejected {
+            color: $warning;
+            border: 2px solid $warning;
+        }
+        &._consideration {
+            color: $orange;
+            border: 2px solid $orange;
+        }
+    }
+
+    /* .tasks__item-type */
+
+    &__item-type {
+    }
+
+    /* .tasks__item-type-title */
+
+    &__item-type-title {
+        @media screen and (min-width: 851px) {
+            display: none;
+        }
+    }
+
+    /* .tasks__item-type-text */
+
+    &__item-type-text {
+        & > span {
+            color: $active;
+        }
+    }
+
+    /* .tasks__item-datetime */
+
+    &__item-datetime {
+        @media screen and (max-width: 850px) {
+            padding: 15px 20px;
+            display: flex;
+            gap: 20px;
+            align-self: flex-start;
+            align-items: center;
+            width: 100%;
+            background: $dark-bg;
+            border-bottom: 3px solid $main-color;
+        }
+    }
+
+    /* .tasks__item-datetime-title */
+
+    &__item-datetime-title {
+        @media screen and (min-width: 851px) {
+            display: none;
+        }
+    }
+
+    /* .tasks__item-datetime-text */
+
+    &__item-datetime-text {
+    }
+
+    /* .tasks__item-download */
+
+    &__item-download {
+        font-size: 20px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        color: $text;
+        &:hover {
+            color: $active;
+        }
+        @media screen and (max-width: 850px) {
+            padding: 15px 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background: $dark-bg;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom: 3px solid $main-color;
+        }
+    }
+
+    /* .tasks__item-download-title */
+
+    &__item-download-title {
+        @media screen and (min-width: 851px) {
+            display: none;
+        }
+    }
+
+    /* .tasks__item-download-text */
+
+    &__item-download-text {
+    }
+}
