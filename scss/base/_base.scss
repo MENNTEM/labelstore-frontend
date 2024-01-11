@@ -27,6 +27,10 @@ textarea:focus {
   outline: none;
 }
 
+textarea {
+	resize: none;
+}
+
 input[type="password"] {
   padding: 13px 45px 13px 15px;
 }

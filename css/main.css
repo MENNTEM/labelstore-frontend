@@ -112,6 +112,10 @@ textarea:focus {
   outline: none;
 }
 
+textarea {
+  resize: none;
+}
+
 input[type=password] {
   padding: 13px 45px 13px 15px;
 }
@@ -456,11 +460,13 @@ body._touch .sidebar__nav-btn {
 .main-block {
   position: relative;
 }
-.main-block__container {
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (min-width: 900px) {
+  .main-block__container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .main-block__box {
   position: relative;
@@ -545,9 +551,9 @@ body._touch .sidebar__nav-btn {
   padding: 20px 50px;
   background-color: #142540;
 }
-@media screen and (max-width: 794px) {
+@media screen and (max-width: 899px) {
   .advant-item {
-    flex: 1 1 33.333%;
+    flex: 1 1 auto;
   }
 }
 @media screen and (max-width: 528px) {
@@ -637,13 +643,10 @@ body._touch .sidebar__nav-btn {
   /* .couriers__item-link */
 }
 .couriers__title {
-  margin-bottom: 25px;
-}
-.couriers__desc {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 476px) {
-  .couriers__desc {
+  .couriers__title {
     margin-bottom: 30px;
   }
 }

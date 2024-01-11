@@ -2,11 +2,12 @@
 	position: relative;
 
   &__container {
-
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    align-items: center;
+		@media screen and (min-width: 900px) {
+			display: flex;
+			gap: 30px;
+			justify-content: space-between;
+			align-items: center;
+		}
   }
 
   &__box {
@@ -100,8 +101,8 @@
 	padding: 20px 50px;
 	background-color: $dark-bg;
 
-	@media screen and (max-width: 794px) {
-		flex: 1 1 33.333%;
+	@media screen and (max-width: 899px) {
+		flex: 1 1 auto;
 	}
 
 	@media screen and (max-width: 528px) {
